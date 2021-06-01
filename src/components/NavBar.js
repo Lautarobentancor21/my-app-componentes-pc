@@ -1,13 +1,15 @@
+import estilos from './estilos.css';
 import React from 'react';
-import { NavBar } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap'
+
+
 
 export default function NavBar() {
-    return ( <
-        Navbar bg = "light" >
-        <
-        Navbar.Brand href = "#home" > PetShop < /Navbar.Brand> <
-        Navbar.Brand href = "#About" > About < /Navbar.Brand> <
-        Navbar.Brand href = "#Contact" > Contact < /Navbar.Brand> <
-        /Navbar>
+    return ( <Navbar id="navbar">
+       <a href="#"><Navbar Brand href = "#home" > Componentes </Navbar></a>   
+       <a href="#"> <Navbar Brand href = "#About" > Armar tu pc </Navbar> </a>  
+       <a href="#"> <Navbar Brand href = "#Contact" > Productos </Navbar></a>  
+       <a href="#"> <Navbar Brand href = "#Contact" > Contacto </Navbar>  </a>     
+        </Navbar >
     )
 }

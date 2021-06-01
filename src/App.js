@@ -1,9 +1,20 @@
 import './App.css';
-import Navbar from './components/NavBar'
+import React from 'react'
+import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.css';
+import Contenedor from './components/Contenedor';
 
 function App() {
-    return Navbar
+    return( 
+       
+             <div className="container1">
+                <NavBar / >
+                <Contenedor / >
+            </div> 
+       
+    
+        )
+      
 }
 
 export default App;

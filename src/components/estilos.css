@@ -1,0 +1,53 @@
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #282c34;
+}
+
+#navbar>nav:nth-child(1) {
+    padding: 20px;
+    font-size: 20px;
+    color: aqua;
+}
+
+#navbar>nav:nth-child(2) {
+    padding: 20px;
+    font-size: 20px;
+    color: aqua;
+}
+
+#navbar>nav:nth-child(3) {
+    padding: 20px;
+    font-size: 20px;
+    color: aqua;
+}
+
+#navbar>nav:nth-child(4) {
+    padding: 20px;
+    font-size: 20px;
+    color: aqua;
+}
+
+#navbar>a {
+    color: aqua;
+    text-decoration: none;
+}
+
+#navbar>a:hover {
+    font-size: 21px;
+    color: aquamarine;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: space-around
+}
+
+h2 {
+    color: aqua;
+}
+
+#root>div {
+    background-color: black;
+    color: aquamarine;
+}
