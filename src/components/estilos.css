@@ -56,3 +56,23 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+#producto {
+    display: flex;
+    flex-direction: column;
+}
+
+#contador {
+    display: flex;
+}
+
+#card {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#center {
+    text-align: center;
+}

@@ -2,9 +2,6 @@ import estilos from './estilos.css';
 import 'react-bootstrap'
 import React from 'react';
 
-
- 
-
 export default function Contenedor(props) {
     return (  
         <div className = "presentacion" >
