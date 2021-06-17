@@ -4,7 +4,7 @@ import React from 'react'
 import NavBar from './components/NavBar';
 import Contenedor from './components/Contenedor';
 import ItemList from "./components/ItemList"
-
+import Data from "./components/HowToFetchData"
 
 
 function App() {
@@ -14,6 +14,10 @@ function App() {
         <Contenedor / > 
        
         < ItemList / >
+
+        < Data / >
+      
+
 
         </div>  
     )
