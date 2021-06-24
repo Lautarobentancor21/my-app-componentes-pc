@@ -1,7 +1,7 @@
 import './estilos.css';
 import React from 'react'
 import dato from "./json/productos.json"
-import ItemList from "./ItemList"
+
 
 export default function ItemCount() { 
     

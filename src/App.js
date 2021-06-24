@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import AppRouter from "./routers/AppRouter"
 import React from 'react'
 import NavBar from './components/NavBar';
 import Contenedor from './components/Contenedor';
@@ -10,13 +11,15 @@ import Data from "./components/HowToFetchData"
 function App() {
     return (
         <div className = "container1" >
-        <NavBar / >
+
+         <AppRouter/>   
+        {/* <NavBar / >
         <Contenedor / > 
        
         < ItemList / >
 
         < Data / >
-      
+       */}
 
 
         </div>  
