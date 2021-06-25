@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../App.css"
+import ItemCount from './ItemCount'
 
 function HowToFetchData() {
   const [data, setData] = useState(null);
@@ -21,6 +22,7 @@ function HowToFetchData() {
                   <img id="imagen" src={data.image}></img>
                   <h2>{data.description}</h2>
                   <h3>precio :{data.price}  </h3>
+                  <ItemCount/>
                 </div>
                )
            })

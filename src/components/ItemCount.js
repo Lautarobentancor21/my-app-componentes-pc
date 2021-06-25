@@ -1,17 +1,17 @@
 import './estilos.css';
 import React from 'react'
-import dato from "./json/productos.json"
+
 
 
 export default function ItemCount() { 
     
     function aumentarCont(){
-        setClicks(clicks+ 1)
+        setCount(count+ 1)
     }
 
     function decremento(){
-        setClicks(clicks-1)
-        if(clicks <= 0){
+        setCount(count-1)
+        if(count <= 0){
              alert("ya no puedes clickear")
              
         }
@@ -20,33 +20,27 @@ export default function ItemCount() {
     function comprar(){
         alert("agregado al carrito")
     }
+
    
 
 
-const [clicks, setClicks] = React.useState(0);
+const [count, setCount] = React.useState(0);
     
     return(
+        <div>
+        <div id="contador">
+         
+           
+        <button onClick={aumentarCont}>+</button>
+          <p>{`cantidad ${count}`}</p>
+         <button onClick={decremento}>-</button>
+     </div>
+     <div> 
 
-    dato.map( (item,index)=>{
-        return(<div id="producto" >
-                <div id="card">
-                    <div id="center"> 
-                        <h2>{item.producto}</h2>
-                        <img src={item.src}></img>
-                       <h2>{item.precio} $</h2>
-                   </div>
-                   <div id="contador">
-                       <button onClick={aumentarCont}>+</button>
-                         <p>{`cantidad ${clicks}`}</p>
-                        <button onClick={decremento}>-</button>
-                    </div>
-                    <div> 
-                       
-                        <button onClick={comprar}>Comprar</button>
-                       
-                    </div>
-                </div>
-
-             </div> )
-        })
-    )}
+     {count !== 0 ? <button onClick={comprar}>Comprar</button> : null} 
+         
+        
+    </div>
+     </div>
+    )
+}

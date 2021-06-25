@@ -1,15 +1,14 @@
 import React from 'react'
-import Item from "../components/HowToFetchData"
-import ItemCount from '../components/ItemCount';
+import Fetch from "../components/HowToFetchData"
 import ItemList from '../components/ItemList'
+import Item from '../components/item'
 
 function productos() {
     return (
         <div>
-            <Item />
-            < ItemCount / >
+            <Fetch />
+            <Item/>
             <ItemList />
-           
         </div>
     )
 }
