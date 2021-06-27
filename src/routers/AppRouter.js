@@ -12,6 +12,7 @@ function AppRouter() {
         
             
         <Router>
+            
             <NavBar/>
             <Switch>
             <Route exact path="/"  component={Home} ></Route>

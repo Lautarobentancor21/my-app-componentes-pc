@@ -37,6 +37,28 @@
     }
 }
 
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #imagen {
     width: 300px;
+}
+
+#tarjeta {
+    width: 414px;
+    border: 1px solid white;
+    padding: 30px;
+}
+
+#tarjeta>h1 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+#tarjeta>h2 {
+    font-size: 17px;
+    padding: 10px
 }

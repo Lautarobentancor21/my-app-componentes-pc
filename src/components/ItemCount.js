@@ -12,7 +12,6 @@ export default function ItemCount() {
     function decremento(){
         setCount(count-1)
         if(count <= 0){
-             alert("ya no puedes clickear")
              
         }
     }
@@ -33,11 +32,13 @@ const [count, setCount] = React.useState(0);
            
         <button onClick={aumentarCont}>+</button>
           <p>{`cantidad ${count}`}</p>
-         <button onClick={decremento}>-</button>
+        {count !== 0 ?  <button onClick={decremento}>-</button> : null }
      </div>
      <div> 
 
-     {count !== 0 ? <button onClick={comprar}>Comprar</button> : null} 
+     
+     {count !== 0 ? <button onClick={comprar}>Agregar a carrito</button> : null } 
+     
          
         
     </div>
