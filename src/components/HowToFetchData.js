@@ -14,15 +14,17 @@ function HowToFetchData() {
   }, []);
   console.log(data);
 
-  
+  const Objetos = () => { 
+    return data
+  }
 
   
-  const [cart , setCart] = useState ([])
-
-
+  
    return ( 
-    <div>
-        {data !== null ? (
+    <div id="body">
+        {data !== null ? ( 
+
+          
         data.map((data, index) => {
               return(
                 <div id="content">
@@ -31,7 +33,7 @@ function HowToFetchData() {
                   <img id="imagen" src={data.image}></img>
                   <h2>{data.description}</h2>
                   <h3>precio $ {data.price}  </h3>
-                  <ItemCount/>
+                  <ItemCount obj = {data}/>
                 </div>
                 </div>
                )

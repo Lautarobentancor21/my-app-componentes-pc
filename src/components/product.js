@@ -1,6 +1,9 @@
 import React from 'react'
 
-function product() {
+const product = ({product,cart,setCart,products}) => {
+
+       
+
     return (
         <div>
             

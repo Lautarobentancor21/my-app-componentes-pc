@@ -1,30 +1,28 @@
 import './estilos.css';
-import React from 'react'
+import React, {useState} from 'react'
+import {UseCart} from '../provider/context'
 
 
 
-export default function ItemCount() { 
+
+export default function ItemCount(obj) { 
     
+
+
+    const {AddToCart} = UseCart()
+    const [count, setCount] = useState(0);
+
+    
+
     function aumentarCont(){
         setCount(count+ 1)
     }
 
     function decremento(){
         setCount(count-1)
-        if(count <= 0){
-             
-        }
+        
     }
 
-    function comprar(){
-        alert("agregado al carrito")
-    }
-
-   
-
-
-const [count, setCount] = React.useState(0);
-    
     return(
         <div>
         <div id="contador">
@@ -37,7 +35,7 @@ const [count, setCount] = React.useState(0);
      <div> 
 
      
-     {count !== 0 ? <button onClick={comprar}>Agregar a carrito</button> : null } 
+     {count !== 0 ? <button onClick={()=> AddToCart(obj) }>Agregar a carrito</button> : null } 
      
          
         

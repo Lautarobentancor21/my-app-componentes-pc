@@ -62,3 +62,8 @@
     font-size: 17px;
     padding: 10px
 }
+
+#body {
+    display: flex;
+    flex-wrap: wrap;
+}
