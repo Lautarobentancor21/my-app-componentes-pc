@@ -2,7 +2,7 @@ import './estilos.css';
 import React from 'react';
 import { Navbar } from 'react-bootstrap'
 import CarWidget from './CarWidget'
-import {Link, Links} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 
 
