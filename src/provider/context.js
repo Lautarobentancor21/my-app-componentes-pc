@@ -15,6 +15,18 @@ export function CartProvider({children}){
         setCart([...cart, obj])
     }
 
+
+    function Delete(){
+
+        let removeItem = cart.filter(function(objeto){ 
+            return objeto !== objeto ; 
+        });
+        
+           setCart(removeItem)
+       
+        } 
+    
+
     function DeleteItem(item){
 
         let removeItem = cart.filter(function(objeto){ 
@@ -25,8 +37,10 @@ export function CartProvider({children}){
        
         } 
 
+        
+
     return (
-            <CartContext.Provider value={{cart, AddToCart,DeleteItem}}>
+            <CartContext.Provider value={{cart, AddToCart,DeleteItem , Delete}}>
                 {children}
             </CartContext.Provider> 
     )
