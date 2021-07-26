@@ -7,18 +7,13 @@ import {CartProvider} from "./provider/context"
 
 
 
+
 function App() {
     return (
         <div className = "container1" >
-
-        <CartProvider>
-         <AppRouter/>  
-          
-         </CartProvider>
-         
-       
-
-
+            <CartProvider>
+             <AppRouter/>  
+             </CartProvider>  
         </div>  
     )
 }

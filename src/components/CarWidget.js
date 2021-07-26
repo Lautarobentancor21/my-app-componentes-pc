@@ -1,6 +1,7 @@
 import './estilos.css';
 import React from 'react';
 import {UseCart} from '../provider/context'
+import {Link} from "react-router-dom"
 
 function CarWidget(){
 
@@ -8,11 +9,10 @@ function CarWidget(){
    
     return (
         <div> 
-            
-             <h2>Carrito</h2> 
+           
+            <Link id={cart.length < 1 ? "carrito" : "carrito2"} to="/carrito"> Carrito  </Link>                 
              {cart.length}
-             {console.log(cart)}
-            
+             
          </div>
     )
 }
