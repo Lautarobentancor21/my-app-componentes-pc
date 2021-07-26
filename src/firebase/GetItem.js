@@ -1,9 +1,17 @@
 import React,{ useEffect, useState} from 'react'
 import { getFirestore } from "./FireBase"
+import {UseCart} from '../provider/context'
+
+
 
 
 
 function GetItem(item) {
+
+
+  const {Delete} = UseCart();
+
+  const {cart} = UseCart();
 
     const[items, setItems] = useState([])
 
@@ -26,7 +34,11 @@ function GetItem(item) {
     function sendOrden(){
       pedido.add(item).then(({id})=>{
         setId(id)
-      }).catch(e => {console.log(e)}).finally(alert("pedido realizada"))
+      }).catch(e => {console.log(e)}).finally(alert("pedido realizada")  )
+    
+      Delete()
+
+      
     }
 
     return (
