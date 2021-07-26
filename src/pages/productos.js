@@ -1,12 +1,19 @@
+import "../App.css"
 import React from 'react'
-import Fetch from "../components/HowToFetchData"
+import Fetch from "../components/HowToFetchData copy"
 
 
 function productos() {
     return (
         <div>
-            <h2>productos</h2>
-            <Fetch />
+            <div id="produc">
+                <h2>productos</h2>
+            </div>
+            
+                <div>
+                    <Fetch />
+                 </div>
+            
         </div>
     )
 }

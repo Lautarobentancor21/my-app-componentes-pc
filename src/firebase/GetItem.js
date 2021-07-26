@@ -17,25 +17,16 @@ function GetItem(item) {
 
     const pedido = db.collection("pedido")
 
-    useEffect(() =>{
-        setLoading(true)
-        itemCollection.get().then(
-            (querySnapshot)=>{
-              if(querySnapshot.size === 0){
-                console.log('no hay resultados')
-              }
-              setItems(querySnapshot.docs.map(doc => doc.data()))
-            }).catch((error)=>{console.log('Error searching items', error)}).finally(()=>{setLoading(false)})
+    const [price, setPrice] = useState([])
 
-    }, [] );
-
+    
 
   
 
     function sendOrden(){
       pedido.add(item).then(({id})=>{
         setId(id)
-      }).catch(e => {console.log(e)}).finally(console.log("se termino"))
+      }).catch(e => {console.log(e)}).finally(alert("pedido realizada"))
     }
 
     return (
@@ -43,7 +34,7 @@ function GetItem(item) {
 
             { console.log(items)}
             <button onClick={sendOrden}>confirmar pedido</button>
-  
+           
         </div>
     )
 }

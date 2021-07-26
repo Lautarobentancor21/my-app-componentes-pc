@@ -41,6 +41,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transform: scale(0.9);
+    border: 12px outset red;
+    background-color: black;
 }
 
 #imagen {
@@ -50,20 +53,36 @@
 #tarjeta {
     width: 414px;
     border: 1px solid white;
-    padding: 30px;
+    padding: 50px;
 }
 
 #tarjeta>h1 {
     font-size: 30px;
     padding: 10px;
+    color: aliceblue;
+    font-family: monospace;
+    letter-spacing: -2px;
 }
 
 #tarjeta>h2 {
-    font-size: 17px;
-    padding: 10px
+    font-size: 23px;
+    padding: 10px;
+    font-family: sans-serif;
 }
 
 #body {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+#produc {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#produc>h2 {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
 }
